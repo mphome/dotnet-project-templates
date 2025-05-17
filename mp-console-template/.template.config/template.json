@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "YourName",
+  "identity": "MyCompany.MpConsole.Template",
+  "name": "MP Console App",
+  "shortName": "mp-console",
+  "sourceName": "mp-console",
+  "preferNameDirectory": true,
+  "symbols": {
+    "framework": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "{{framework}}",
+      "defaultValue": "net8.0"
+    },
+    "implicitUsings": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "{{implicitUsings}}",
+      "defaultValue": "disable"
+    },
+    "nullable": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "{{nullable}}",
+      "defaultValue": "disable"
+    },
+    "windowsSettings": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "{{windowsSettings}}",
+      "defaultValue": "<SupportedOSPlatform>windows</SupportedOSPlatform>"
+    }
+  },
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "true",
+          "include": ["**/*.csproj"]
+        }
+      ]
+    }
+  ]
+}
