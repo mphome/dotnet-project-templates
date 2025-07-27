@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "User",
+  "classifications": [ "Common", "Console" ],
+  "identity": "mp-console-7.3-template",
+  "name": "mp-console-7.3-template",
+  "shortName": "mpc73",
+  "sourceName":"mp-console-7.3",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
